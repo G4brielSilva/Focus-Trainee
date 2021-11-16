@@ -1,11 +1,11 @@
+
 function send()
 {
     var msg = document.getElementById('input').value;
-    alert(msg);
-    const BOT_TOKEN = "2118393099:AAHNp3T4KLNzNySB-EsXB9QCqupj9O5aoao";
-    const CHAT_ID = "1895287593";
-    const { Telegraf } = require('telegraf')
-    
-    const bot = new Telegraf(BOT_TOKEN);
-    bot.telegram.sendMessage(CHAT_ID, 'Hello Telegram!');
+    const BOT_TOKEN = "<TOKEN>";
+    const CHAT_ID = "<CHAT_ID>";
+    const Url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${msg}`
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", Url, false );
+    xmlHttp.send( null );
 }
