@@ -1,5 +1,5 @@
 ## Notas
-Tem coisa há melhorar para os próximos testes, como:<br>
+Coisas para melhorar nos próximos testes:<br>
   - Multiplos Chat_id's.
   - Formatação para boa visualização.
   - Data e hora do pedido.
