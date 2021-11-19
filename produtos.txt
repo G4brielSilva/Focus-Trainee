@@ -1,0 +1,52 @@
+Produtos do Acaiá Coffee Shop:
+*Cafés:
+Expresso
+Coado
+Cappuccino 
+Café Gelado
+Café do Porto
+Café macchiato
+
+*Sucos:
+Laranja
+Acerola
+Abacaxi
+Abacaxi c/ Hortelã
+Morango
+Maracujá
+
+*Refrigerantes Latas:
+Coca
+Fanta Uva
+Fanta Laranja
+Guaraná Antartica
+
+*Cervejas Long Neck:
+Heineken
+Stella Artois
+Budweiser
+
+*Energéticos Lata:
+Red Bull
+Monster
+
+*MilkShakes:
+Morango
+Chocolate
+Cookies
+
+*Pratos Salgados:
+Quesadillas
+Tapiocas
+Omeletes
+Pão com Linguiça
+Mixto
+Croissant
+Pão de Queijo
+
+*Pratos Doces:
+Bolos
+Tortas
+Petit Gateu
+Waffles com cobertura
+Cupcakes
