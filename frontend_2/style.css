@@ -1,0 +1,61 @@
+* {
+    margin:0;
+    padding: 0;
+}
+/*Começo do header*/
+.center {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.logo{
+    width: 35%;
+    padding: 0 1%;
+}
+header {
+    padding: 0px 0;
+    background-color: blanchedalmond;
+}
+.menu {
+    width: 40%;
+    text-align: left;
+    padding-top: 60px;
+    padding-right: 60px;
+}
+.menu a{
+    color: rgb(0, 0, 0);
+    text-decoration: black;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 70px;
+}
+/*Fim do header*/
+body{
+    background-color: rgb(112, 56, 46);
+}
+.produtos {
+   margin-top: 110px;
+   padding-left: 500px;
+}
+.ac_box { width: 320px; }
+.ac_box_top { 
+    border: 2px solid blanchedalmond;
+    border-bottom: none; 
+    margin-left: 2px; 
+    height: 7px; 
+    width: 323px; 
+}
+.ac_box_cont { 
+    border-left: 6px solid blanchedalmond; 
+    border-right: 5px solid blanchedalmond;
+     border-bottom: 5px solid blanchedalmond; 
+     height: 400px; 
+     padding: 5px 0; 
+}
+.box{
+    padding: 0 30%;
+    
+}
+
+
