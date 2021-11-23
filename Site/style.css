@@ -7,6 +7,11 @@
     padding: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+
 #car {
     width: 100px;
     height: 100px;
