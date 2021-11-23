@@ -1,0 +1,71 @@
+:root {
+    --marrom-avermelhado: #512414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#car {
+    width: 100px;
+    height: 100px;
+}
+
+#logo {
+    width: 160px;
+    height: 160px;
+    float: left;
+    padding: 0 2%;
+}
+
+.listas {
+    width: 100%;
+    height: 100px;
+    
+    padding-top: 50px;
+    padding-left: 200px;
+}
+
+#lista1 {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0px;
+}
+
+.cabeçalho {
+    font-size: xx-large;
+    color: var(--marrom-avermelhado);
+    font-weight: bold;
+    text-align: center;
+}
+
+#traço {
+    background-color: var(--marrom-avermelhado);
+    width: 100%;
+    height: 50px;
+}
+
+.corpo {
+    margin: 0 0 0 0;
+    width: 100%;
+    height: 100%;
+}
+
+#listabody {
+    list-style: none;
+}
+
+.produtos {
+    width: 25%;
+    height: 100%;
+    float:left;
+}
+.imagens {
+    width: 75%;
+    height: 100%;
+    float: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
