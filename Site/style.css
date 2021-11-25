@@ -63,14 +63,34 @@ body {
 }
 
 .produtos {
+    text-align: center;
     width: 25%;
     height: 100%;
     float:left;
 }
 .imagens {
+    padding-top: 50px;
     width: 75%;
     height: 100%;
     float: right;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+.faixa
+{
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    width: 90%;
+    background-color: var(--marrom-avermelhado);
+}
+
+.imagem
+{
+    padding-left: 20%;
+    margin-top: 10px;
+    height: 75%;
+    width: 60%;
 }
