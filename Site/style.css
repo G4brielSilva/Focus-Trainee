@@ -69,6 +69,7 @@ body {
     float:left;
 }
 .imagens {
+    padding-top: 50px;
     width: 75%;
     height: 100%;
     float: right;
@@ -88,7 +89,8 @@ body {
 
 .imagem
 {
+    padding-left: 20%;
     margin-top: 10px;
-    height: 90%;
-    width: 90%;
+    height: 75%;
+    width: 60%;
 }
