@@ -89,13 +89,13 @@ body {
 
 .imagem
 {
-    padding-left: 20%;
+    padding-left: 30%;
     margin-top: 10px;
-    height: 75%;
-    width: 60%;
+    height: 55%;
+    width: 40%;
 }
 
-.butoes-add
+.botoes-add
 {
     color: white;
     background-color: #a75538;
@@ -109,5 +109,19 @@ body {
 
 .quantidade
 {
+    font-size: 15px;
     padding-top: 3px;
+    font-weight: bold;
+    font-family: Verdana;
+
+}
+
+.preco
+{
+    margin-top: 20px;
+    text-align: center;
+    color: var(--marrom-avermelhado);
+    font-size: 15px;
+    font-family: Verdana;
+    font-weight: bolder;
 }
