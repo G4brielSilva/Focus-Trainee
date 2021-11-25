@@ -94,3 +94,20 @@ body {
     height: 75%;
     width: 60%;
 }
+
+.butoes-add
+{
+    color: white;
+    background-color: #a75538;
+    height: 25px;
+    width: 25px;
+    margin-left: 5px;
+    float: left;
+    border-radius: 20px;
+    border: 1px solid black ;
+}
+
+.quantidade
+{
+    padding-top: 3px;
+}

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
     <title>Document</title>
     <nav>
         <img id="logo" src="new-logo.png">
@@ -50,8 +51,11 @@
                         Café
                     </div>
                     <img class="imagem" src="./img.png/cappucino.png">
-                    Quantidade
-                    <input type="text" size="2" > 
+                    <div class="interface">
+                        <button class="butoes-add" onclick=conta(1)>+</button>
+                        <button class="butoes-add" onclick=conta(-1)>-</button>
+                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="0"></a></p>
+                    </div>
                     
                 </div>
 
