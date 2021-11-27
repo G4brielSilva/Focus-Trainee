@@ -61,12 +61,75 @@ body {
 #listabody {
     list-style: none;
 }
-
+#any{
+    margin-top: 6%;
+}
+#new_text{
+    font-weight: 300;
+    padding-right: 10%;
+    padding-left: 6%;
+    font-family: verdana;
+}
 .produtos {
+    margin-top: 0.1%;
     text-align: center;
-    width: 25%;
-    height: 100%;
+    width: 20%;
+    height: 500px;
     float:left;
+    overflow-y: scroll;
+}
+
+  
+  .produtos::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #F5F5F5;
+  }
+  
+  .produtos::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+  }
+  
+  .produtos::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--marrom-avermelhado);
+  }
+
+
+.liprodutos:hover{
+    background-color: #a75538;
+    transition: 0.5s;
+    opacity: 0.7;
+}
+#ulprodutos{
+    border-top: 20%;
+    list-style: none;
+    width: 80%;
+    margin-left: 1.8%;
+}
+.h3produtos{
+    text-align: left;
+    margin-left:20%;
+}
+.tracinho{
+    background-color: var(--marrom-avermelhado);
+    height: 2px;
+    width: 80%;
+    margin-left: 1.8%;
+}
+.liprodutos{
+    list-style: none;
+    font-weight: 500;
+    padding-right:50%;
+    padding-top: 3%;
+    padding-bottom: 2.5%;
+    padding-left: 2.5%;
+    text-align: left;
+    font-family: Verdana;
+}
+.link_produtos{
+    text-decoration: none;
+    color: black;
 }
 .imagens {
     padding-top: 50px;
