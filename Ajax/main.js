@@ -44,12 +44,13 @@ function limpa()
     for(var i=0; i<produtos.length; i++)
         produtos[i].quantidade = 0;
 }
-var test;
+var test="a";
 
 function getInfo(){
     $.get("token.php", function(resultado){
         $("#token").html(resultado);
     });
+    console.log(test);
     $.get("id.php", function(resultado){
         $("#id").html(resultado);
     });
@@ -62,7 +63,6 @@ function send()
     limpa();
     getInfo();
     const BOT_TOKEN = document.getElementById('token').innerHTML;
-    console.log(BOT_TOKEN);
     const CHAT_IDs = document.getElementById('id').innerHTML//.split(",");
 
     //for(var i = 0; i<CHAT_IDs.length; i++)

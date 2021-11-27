@@ -52,13 +52,13 @@ function send()
     limpa();
     
     const BOT_TOKEN = document.getElementById('token').value;
-    const CHAT_IDs = document.getElementById('id').value.split(",");
+    const CHAT_IDs = document.getElementById('id').value//.split(",");
 
-    for(var i = 0; i<CHAT_IDs.length; i++)
-    {
-        const Url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_IDs[i]}&text=${msg}`;
+    //for(var i = 0; i<CHAT_IDs.length; i++)
+    //{
+        const Url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_IDs/*[i]*/}&text=${msg}`;
         var xmlHttp = new XMLHttpRequest();
         xmlHttp.open( "GET", Url, false );
         xmlHttp.send( null );
-    }
+   // }
 }
