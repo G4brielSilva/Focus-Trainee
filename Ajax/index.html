@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="post()">Clique em Mim</button>
+    <div id="entrada"></div>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script>
+        function post(){
+            $.get("token.php", function(resultado){
+                $("#entrada").html(resultado);
+            });
+            console.log(document.getElementById("entrada").innerHTML);
+        }
+    </script>
+</body>
+</html>
