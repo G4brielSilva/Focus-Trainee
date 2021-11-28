@@ -52,6 +52,12 @@ body {
     height: 50px;
 }
 
+.img-cabecalho
+{
+    height: 50px;
+    position: absolute;
+}
+
 .corpo {
     margin: 0 0 0 0;
     width: 100%;
