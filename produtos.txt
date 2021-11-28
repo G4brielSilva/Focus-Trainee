@@ -1,13 +1,13 @@
 Produtos do Acaiá Coffee Shop:
 *Cafés:
-Expresso
-Coado
-Cappuccino 
-Café Gelado
-Café do Porto
-Café macchiato
+Expresso - R$3,50
+Coado - R$4,00
+Cappuccino - R$ 6,00
+Café Gelado - R$8,00
+Café do Porto - R$9,00
+Café macchiato - R$10,00
 
-*Sucos:
+*Sucos: (Taça de 400ml) - R$8,00
 Laranja
 Acerola
 Abacaxi
@@ -15,38 +15,38 @@ Abacaxi c/ Hortelã
 Morango
 Maracujá
 
-*Refrigerantes Latas:
+*Refrigerantes Latas: - R$6,00
 Coca
 Fanta Uva
 Fanta Laranja
 Guaraná Antartica
 
-*Cervejas Long Neck:
+*Cervejas Long Neck: - R$10,00
 Heineken
 Stella Artois
 Budweiser
 
-*Energéticos Lata:
+*Energéticos Lata: - R$12,00
 Red Bull
 Monster
 
-*MilkShakes:
+*MilkShakes:(Taça de 500ml) - R$16,00
 Morango
 Chocolate
 Cookies
 
 *Pratos Salgados:
-Quesadillas
-Tapiocas
-Omeletes
-Pão com Linguiça
-Mixto
-Croissant
-Pão de Queijo
+Quesadillas -R$20,00
+Tapiocas - R$12,00
+Omeletes - R$12,00
+Pão com Linguiça - R$14,00
+Mixto - R$8,00
+Croissant - R$6,00
+Pão de Queijo - R$4,00
 
 *Pratos Doces:
-Bolos
-Tortas
-Petit Gateu
-Waffles com cobertura
-Cupcakes
+Bolos (Fatia) - R$ 7,00
+Tortas (Fatia) - R$ 7,00
+Petit Gateu - R$ 16,00
+Waffles com cobertura - R$18,00
+Cupcakes - R$10,00

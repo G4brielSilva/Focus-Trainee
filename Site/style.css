@@ -196,3 +196,21 @@ body {
     font-weight: bolder;
 }
 
+footer
+{
+    color: white;
+    margin-top: 100px;
+    padding-top: 30px;
+    background-color: var(--marrom-avermelhado);
+    width: 100%;
+    height: 100%;
+    float: left;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.texto-footer
+{
+    padding: 30px 50px 50px 50px;
+    font-size: 20px;
+}

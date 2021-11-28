@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="data.js"></script>
     <script type="text/javascript" src="main.js"></script>
     <title>Document</title>
     <nav>
@@ -23,11 +22,6 @@
                     </a>
                 </li>
                 <li class="cabeçalho">
-                    <a>
-                        Mais
-                    </a>
-                </li>
-                <li>
                     <a id="carrinho">
                         <img id="car" src="img.png/img2/carrinho.png">
                     </a>
@@ -161,7 +155,7 @@
                     <br>
                     <div class="interface">
                         <button class="botoes-add" onclick=add(0)>+</button>
-                        <button class="botoes-add" onclick=conta(-1)>-</button>
+                        <button class="botoes-add" onclick=sub(0)>-</button>
                         <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
                         <p class="preco">R$ 11,90</p>
                     </div>
@@ -178,7 +172,7 @@
                     <br>
                     <div class="interface">
                         <button class="botoes-add" onclick=add(1)>+</button>
-                        <button class="botoes-add" onclick=conta(-1)>-</button>
+                        <button class="botoes-add" onclick=sub(1)>-</button>
                         <p class="quantidade">&nbspQuantidade:&nbsp<a id="1">0</a></p>
                         <p class="preco">R$ 11,90</p>
                     </div>
@@ -193,9 +187,9 @@
                     <br>
                     <br>
                     <div class="interface">
-                        <button class="botoes-add" onclick=conta(1)>+</button>
-                        <button class="botoes-add" onclick=conta(-1)>-</button>
-                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                        <button class="botoes-add" onclick=add(2)>+</button>
+                        <button class="botoes-add" onclick=sub(2)>-</button>
+                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="2">0</a></p>
                         <p class="preco">R$ 11,90</p>
                     </div>
                 </div>
@@ -212,9 +206,9 @@
                     <br>
                     <br>
                     <div class="interface">
-                        <button class="botoes-add" onclick=conta(1)>+</button>
-                        <button class="botoes-add" onclick=conta(-1)>-</button>
-                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                        <button class="botoes-add" onclick=add(3)>+</button>
+                        <button class="botoes-add" onclick=sub(3)>-</button>
+                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="3">0</a></p>
                         <p class="preco">R$ 11,90</p>
                     </div>
                     
@@ -228,9 +222,9 @@
                     <br>
                     <br>
                     <div class="interface">
-                        <button class="botoes-add" onclick=conta(1)>+</button>
-                        <button class="botoes-add" onclick=conta(-1)>-</button>
-                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                        <button class="botoes-add" onclick=add(4)>+</button>
+                        <button class="botoes-add" onclick=sub(4)>-</button>
+                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="4">0</a></p>
                         <p class="preco">R$ 11,90</p>
                     </div>
                 </div>
@@ -243,9 +237,9 @@
                     <br>
                     <br>
                     <div class="interface">
-                        <button class="botoes-add" onclick=conta(1)>+</button>
-                        <button class="botoes-add" onclick=conta(-1)>-</button>
-                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                        <button class="botoes-add" onclick=add(5)>+</button>
+                        <button class="botoes-add" onclick=sub(5)>-</button>
+                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="5">0</a></p>
                         <p class="preco">R$ 11,90</p>
                     </div>
                 </div>
@@ -263,9 +257,9 @@
                     <br>
                     <br>
                     <div class="interface">
-                        <button class="botoes-add" onclick=conta(1)>+</button>
-                        <button class="botoes-add" onclick=conta(-1)>-</button>
-                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                        <button class="botoes-add" onclick=add(6)>+</button>
+                        <button class="botoes-add" onclick=sub(6)>-</button>
+                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="6">0</a></p>
                         <p class="preco">R$ 11,90</p>
                     </div>
                     
@@ -279,9 +273,9 @@
                     <br>
                     <br>
                     <div class="interface">
-                        <button class="botoes-add" onclick=conta(1)>+</button>
-                        <button class="botoes-add" onclick=conta(-1)>-</button>
-                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                        <button class="botoes-add" onclick=add(7)>+</button>
+                        <button class="botoes-add" onclick=sub(7)>-</button>
+                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="7">0</a></p>
                         <p class="preco">R$ 11,90</p>
                     </div>
                 </div>
@@ -294,9 +288,9 @@
                     <br>
                     <br>
                     <div class="interface">
-                        <button class="botoes-add" onclick=conta(1)>+</button>
-                        <button class="botoes-add" onclick=conta(-1)>-</button>
-                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                        <button class="botoes-add" onclick=add(8)>+</button>
+                        <button class="botoes-add" onclick=sub(8)>-</button>
+                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="8">0</a></p>
                         <p class="preco">R$ 11,90</p>
                     </div>
                 </div>
@@ -313,9 +307,9 @@
                     <br>
                     <br>
                     <div class="interface">
-                        <button class="botoes-add" onclick=conta(1)>+</button>
-                        <button class="botoes-add" onclick=conta(-1)>-</button>
-                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                        <button class="botoes-add" onclick=add(9)>+</button>
+                        <button class="botoes-add" onclick=sub(9)>-</button>
+                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="9">0</a></p>
                         <p class="preco">R$ 11,90</p>
                     </div>
                     
@@ -329,9 +323,9 @@
                     <br>
                     <br>
                     <div class="interface">
-                        <button class="botoes-add" onclick=conta(1)>+</button>
-                        <button class="botoes-add" onclick=conta(-1)>-</button>
-                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                        <button class="botoes-add" onclick=add(10)>+</button>
+                        <button class="botoes-add" onclick=sub(10)>-</button>
+                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="10">0</a></p>
                         <p class="preco">R$ 11,90</p>
                     </div>
                 </div>
@@ -344,9 +338,9 @@
                     <br>
                     <br>
                     <div class="interface">
-                        <button class="botoes-add" onclick=conta(1)>+</button>
-                        <button class="botoes-add" onclick=conta(-1)>-</button>
-                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                        <button class="botoes-add" onclick=add(11)>+</button>
+                        <button class="botoes-add" onclick=sub(11)>-</button>
+                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="11">0</a></p>
                         <p class="preco">R$ 11,90</p>
                     </div>
                 </div>
@@ -363,9 +357,9 @@
                     <br>
                     <br>
                     <div class="interface">
-                        <button class="botoes-add" onclick=conta(1)>+</button>
-                        <button class="botoes-add" onclick=conta(-1)>-</button>
-                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                        <button class="botoes-add" onclick=add(12)>+</button>
+                        <button class="botoes-add" onclick=sub(12)>-</button>
+                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="12">0</a></p>
                         <p class="preco">R$ 11,90</p>
                     </div>
                     
@@ -379,9 +373,9 @@
                     <br>
                     <br>
                     <div class="interface">
-                        <button class="botoes-add" onclick=conta(1)>+</button>
-                        <button class="botoes-add" onclick=conta(-1)>-</button>
-                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                        <button class="botoes-add" onclick=add(13)>+</button>
+                        <button class="botoes-add" onclick=sub(13)>-</button>
+                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="13">0</a></p>
                         <p class="preco">R$ 11,90</p>
                     </div>
                 </div>
@@ -394,9 +388,9 @@
                     <br>
                     <br>
                     <div class="interface">
-                        <button class="botoes-add" onclick=conta(1)>+</button>
-                        <button class="botoes-add" onclick=conta(-1)>-</button>
-                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                        <button class="botoes-add" onclick=add(14)>+</button>
+                        <button class="botoes-add" onclick=sub(14)>-</button>
+                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="14">0</a></p>
                         <p class="preco">R$ 11,90</p>
                     </div>
                 </div>
@@ -413,9 +407,9 @@
                     <br>
                     <br>
                     <div class="interface">
-                        <button class="botoes-add" onclick=conta(1)>+</button>
-                        <button class="botoes-add" onclick=conta(-1)>-</button>
-                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                        <button class="botoes-add" onclick=add(15)>+</button>
+                        <button class="botoes-add" onclick=sub(15)>-</button>
+                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="15">0</a></p>
                         <p class="preco">R$ 11,90</p>
                     </div>
                     
@@ -429,9 +423,9 @@
                     <br>
                     <br>
                     <div class="interface">
-                        <button class="botoes-add" onclick=conta(1)>+</button>
-                        <button class="botoes-add" onclick=conta(-1)>-</button>
-                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                        <button class="botoes-add" onclick=add(16)>+</button>
+                        <button class="botoes-add" onclick=sub(16)>-</button>
+                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="16">0</a></p>
                         <p class="preco">R$ 11,90</p>
                     </div>
                 </div>
@@ -444,9 +438,9 @@
                     <br>
                     <br>
                     <div class="interface">
-                        <button class="botoes-add" onclick=conta(1)>+</button>
-                        <button class="botoes-add" onclick=conta(-1)>-</button>
-                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                        <button class="botoes-add" onclick=add(17)>+</button>
+                        <button class="botoes-add" onclick=sub(17)>-</button>
+                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="17">0</a></p>
                         <p class="preco">R$ 11,90</p>
                     </div>
                 </div>
@@ -463,9 +457,9 @@
                     <br>
                     <br>
                     <div class="interface">
-                        <button class="botoes-add" onclick=conta(1)>+</button>
-                        <button class="botoes-add" onclick=conta(-1)>-</button>
-                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                        <button class="botoes-add" onclick=add(18)>+</button>
+                        <button class="botoes-add" onclick=sub(18)>-</button>
+                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="18">0</a></p>
                         <p class="preco">R$ 11,90</p>
                     </div>
                     
@@ -479,9 +473,9 @@
                     <br>
                     <br>
                     <div class="interface">
-                        <button class="botoes-add" onclick=conta(1)>+</button>
-                        <button class="botoes-add" onclick=conta(-1)>-</button>
-                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                        <button class="botoes-add" onclick=add(19)>+</button>
+                        <button class="botoes-add" onclick=sub(19)>-</button>
+                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="19">0</a></p>
                         <p class="preco">R$ 11,90</p>
                     </div>
                 </div>
@@ -494,9 +488,9 @@
                     <br>
                     <br>
                     <div class="interface">
-                        <button class="botoes-add" onclick=conta(1)>+</button>
-                        <button class="botoes-add" onclick=conta(-1)>-</button>
-                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                        <button class="botoes-add" onclick=add(20)>+</button>
+                        <button class="botoes-add" onclick=sub(20)>-</button>
+                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="20">0</a></p>
                         <p class="preco">R$ 11,90</p>
                     </div>
                 </div>
@@ -514,9 +508,9 @@
                 <br>
                 <br>
                 <div class="interface">
-                    <button class="botoes-add" onclick=conta(1)>+</button>
-                    <button class="botoes-add" onclick=conta(-1)>-</button>
-                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                    <button class="botoes-add" onclick=add(21)>+</button>
+                    <button class="botoes-add" onclick=sub(21)>-</button>
+                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="21">0</a></p>
                     <p class="preco">R$ 11,90</p>
                 </div>
                 
@@ -530,9 +524,9 @@
                 <br>
                 <br>
                 <div class="interface">
-                    <button class="botoes-add" onclick=conta(1)>+</button>
-                    <button class="botoes-add" onclick=conta(-1)>-</button>
-                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                    <button class="botoes-add" onclick=add(22)>+</button>
+                    <button class="botoes-add" onclick=sub(22)>-</button>
+                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="22">0</a></p>
                     <p class="preco">R$ 11,90</p>
                 </div>
             </div>
@@ -545,9 +539,9 @@
                 <br>
                 <br>
                 <div class="interface">
-                    <button class="botoes-add" onclick=conta(1)>+</button>
-                    <button class="botoes-add" onclick=conta(-1)>-</button>
-                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                    <button class="botoes-add" onclick=add(23)>+</button>
+                    <button class="botoes-add" onclick=sub(23)>-</button>
+                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="23">0</a></p>
                     <p class="preco">R$ 11,90</p>
                 </div>
             </div>
@@ -564,9 +558,9 @@
                 <br>
                 <br>
                 <div class="interface">
-                    <button class="botoes-add" onclick=conta(1)>+</button>
-                    <button class="botoes-add" onclick=conta(-1)>-</button>
-                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                    <button class="botoes-add" onclick=add(24)>+</button>
+                    <button class="botoes-add" onclick=sub(24)>-</button>
+                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="24">0</a></p>
                     <p class="preco">R$ 11,90</p>
                 </div>
                 
@@ -580,9 +574,9 @@
                 <br>
                 <br>
                 <div class="interface">
-                    <button class="botoes-add" onclick=conta(1)>+</button>
-                    <button class="botoes-add" onclick=conta(-1)>-</button>
-                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                    <button class="botoes-add" onclick=add(25)>+</button>
+                    <button class="botoes-add" onclick=sub(25)>-</button>
+                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="25">0</a></p>
                     <p class="preco">R$ 11,90</p>
                 </div>
             </div>
@@ -595,9 +589,9 @@
                 <br>
                 <br>
                 <div class="interface">
-                    <button class="botoes-add" onclick=conta(1)>+</button>
-                    <button class="botoes-add" onclick=conta(-1)>-</button>
-                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                    <button class="botoes-add" onclick=add(26)>+</button>
+                    <button class="botoes-add" onclick=sub(26)>-</button>
+                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="26">0</a></p>
                     <p class="preco">R$ 11,90</p>
                 </div>
             </div>
@@ -614,9 +608,9 @@
                 <br>
                 <br>
                 <div class="interface">
-                    <button class="botoes-add" onclick=conta(1)>+</button>
-                    <button class="botoes-add" onclick=conta(-1)>-</button>
-                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                    <button class="botoes-add" onclick=add(27)>+</button>
+                    <button class="botoes-add" onclick=sub(27)>-</button>
+                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="27">0</a></p>
                     <p class="preco">R$ 11,90</p>
                 </div>
                 
@@ -630,9 +624,9 @@
                 <br>
                 <br>
                 <div class="interface">
-                    <button class="botoes-add" onclick=conta(1)>+</button>
-                    <button class="botoes-add" onclick=conta(-1)>-</button>
-                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                    <button class="botoes-add" onclick=add(28)>+</button>
+                    <button class="botoes-add" onclick=sub(28)>-</button>
+                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="28">0</a></p>
                     <p class="preco">R$ 11,90</p>
                 </div>
             </div>
@@ -645,9 +639,9 @@
                 <br>
                 <br>
                 <div class="interface">
-                    <button class="botoes-add" onclick=conta(1)>+</button>
-                    <button class="botoes-add" onclick=conta(-1)>-</button>
-                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                    <button class="botoes-add" onclick=add(29)>+</button>
+                    <button class="botoes-add" onclick=sub(29)>-</button>
+                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="29">0</a></p>
                     <p class="preco">R$ 11,90</p>
                 </div>
             </div>
@@ -664,9 +658,9 @@
                 <br>
                 <br>
                 <div class="interface">
-                    <button class="botoes-add" onclick=conta(1)>+</button>
-                    <button class="botoes-add" onclick=conta(-1)>-</button>
-                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                    <button class="botoes-add" onclick=add(30)>+</button>
+                    <button class="botoes-add" onclick=sub(30)>-</button>
+                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="30">0</a></p>
                     <p class="preco">R$ 11,90</p>
                 </div>
                 
@@ -680,9 +674,9 @@
                 <br>
                 <br>
                 <div class="interface">
-                    <button class="botoes-add" onclick=conta(1)>+</button>
-                    <button class="botoes-add" onclick=conta(-1)>-</button>
-                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                    <button class="botoes-add" onclick=add(31)>+</button>
+                    <button class="botoes-add" onclick=sub(31)>-</button>
+                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="31">0</a></p>
                     <p class="preco">R$ 11,90</p>
                 </div>
             </div>
@@ -695,9 +689,9 @@
                 <br>
                 <br>
                 <div class="interface">
-                    <button class="botoes-add" onclick=conta(1)>+</button>
-                    <button class="botoes-add" onclick=conta(-1)>-</button>
-                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                    <button class="botoes-add" onclick=add(32)>+</button>
+                    <button class="botoes-add" onclick=sub(32)>-</button>
+                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="32">0</a></p>
                     <p class="preco">R$ 11,90</p>
                 </div>
             </div>
@@ -714,9 +708,9 @@
                 <br>
                 <br>
                 <div class="interface">
-                    <button class="botoes-add" onclick=conta(1)>+</button>
-                    <button class="botoes-add" onclick=conta(-1)>-</button>
-                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                    <button class="botoes-add" onclick=add(33)>+</button>
+                    <button class="botoes-add" onclick=sub(33)>-</button>
+                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="33">0</a></p>
                     <p class="preco">R$ 11,90</p>
                 </div>
                 
@@ -730,9 +724,9 @@
                 <br>
                 <br>
                 <div class="interface">
-                    <button class="botoes-add" onclick=conta(1)>+</button>
-                    <button class="botoes-add" onclick=conta(-1)>-</button>
-                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                    <button class="botoes-add" onclick=add(34)>+</button>
+                    <button class="botoes-add" onclick=sub(34)>-</button>
+                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="34">0</a></p>
                     <p class="preco">R$ 11,90</p>
                 </div>
             </div>
@@ -745,9 +739,9 @@
                 <br>
                 <br>
                 <div class="interface">
-                    <button class="botoes-add" onclick=conta(1)>+</button>
-                    <button class="botoes-add" onclick=conta(-1)>-</button>
-                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                    <button class="botoes-add" onclick=add(35)>+</button>
+                    <button class="botoes-add" onclick=sub(35)>-</button>
+                    <p class="quantidade">&nbspQuantidade:&nbsp<a id="35">0</a></p>
                     <p class="preco">R$ 11,90</p>
                 </div>
             </div>
@@ -757,4 +751,24 @@
     </div>
     
 </body>
+
+<footer>
+    <h2>  Quem somos </h2>
+    <p class="texto-footer"> 
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type 
+        specimen book. It has survived not only five centuries, but also the leap into 
+        electronic typesetting, remaining essentially unchanged. It was popularised in the
+        1960s with the release of Letraset sheets containing Lorem Ipsum passages, and 
+        more recently with desktop publishing software like Aldus PageMaker including 
+        versions of Lorem Ipsum.
+    </p>
+    <div class="contatos">
+
+    </div>
+</footer>
+
+
+
 </html>
