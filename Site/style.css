@@ -65,9 +65,10 @@ body {
     margin-top: 6%;
 }
 #new_text{
+    position: relative;
     font-weight: 300;
-    padding-right: 10%;
-    padding-left: 6%;
+    padding-right: 2%;
+    padding-left: 2%;
     font-family: verdana;
 }
 .produtos {
@@ -109,7 +110,7 @@ body {
 }
 .h3produtos{
     text-align: left;
-    margin-left:20%;
+    margin-left:5%;
 }
 .tracinho{
     background-color: var(--marrom-avermelhado);
@@ -188,3 +189,4 @@ body {
     font-family: Verdana;
     font-weight: bolder;
 }
+

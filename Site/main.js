@@ -1,8 +1,15 @@
-var quantidade = 0;
+var quantidade = [0]*10;
 
-function conta(n)
+function add(id)
 {
-    if(quantidade + n >= 0)
-        quantidade += n
-    document.getElementById("0").innerHTML = quantidade;
+    quantidade[id] += 1;
+    document.getElementById(id).innerHTML = quantidade[id];
+}
+
+function sub(id)
+{
+    if(quantidade[id] - 1 >= 0)
+        quantidade[id] -= 1;
+
+    document.getElementById(id).innerHTML = quantidade[id];
 }

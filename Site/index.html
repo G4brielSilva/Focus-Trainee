@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="main.js"></script>
     <title>Document</title>
     <nav>
         <img id="logo" src="new-logo.png">
@@ -38,9 +39,12 @@
     </nav>
 </head>
 <body>
+
+    <!-- Barra de rolagem -->
     <br>
     <br>
     <h2 id="new_text">Produtos</h2>
+    <br>
     <div class="produtos">
         <div id="any"></div>
         <hr class="tracinho"></hr>
@@ -58,7 +62,7 @@
         </ul>
         <ul id="ulprodutos">
             <li class="liprodutos">
-                <a class="link_produtos" href="#">Cappuccino</a>
+                <a class="link_produtos" href="#Cappuccino">Cappuccino</a>
             </li>
         </ul>
         <ul id="ulprodutos">
@@ -154,7 +158,7 @@
                     <br>
                     <br>
                     <div class="interface">
-                        <button class="botoes-add" onclick=conta(1)>+</button>
+                        <button class="botoes-add" onclick=add(0)>+</button>
                         <button class="botoes-add" onclick=conta(-1)>-</button>
                         <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
                         <p class="preco">R$ 11,90</p>
@@ -163,7 +167,7 @@
                 </div>
 
                 <div class="box">
-                    <div class="faixa">
+                    <div class="faixa" id="Cappuccino">
                         Cappuccino
                     </div>
                     <br>
@@ -171,9 +175,9 @@
                     <br>
                     <br>
                     <div class="interface">
-                        <button class="botoes-add" onclick=conta(1)>+</button>
+                        <button class="botoes-add" onclick=add(1)>+</button>
                         <button class="botoes-add" onclick=conta(-1)>-</button>
-                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="0">0</a></p>
+                        <p class="quantidade">&nbspQuantidade:&nbsp<a id="1">0</a></p>
                         <p class="preco">R$ 11,90</p>
                     </div>
                 </div>
@@ -246,6 +250,7 @@
 
             </div>
         </li>
+
         <li id="listabody">
             <div class="imagens">
                 <div class="box">
