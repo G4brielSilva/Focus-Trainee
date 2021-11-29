@@ -141,7 +141,6 @@ const produtos =[
                     }               
 ]
 
-const n = 1;
 var quantidade = [];
 limpa();
     
@@ -162,11 +161,11 @@ function sub(id)
 
 function carrinho()
 {
-    for(i=0; i<n; i++)
+    for(i=0; i<produtos.length; i++)
     {
-        if(produtos[i] > 0)
+        if(quantidade[i] > 0)
         {
-            console.log("Produto:",i," Quantidade: ", quantidade[i]);
+            console.log("Produto:",produtos[i].nome," Quantidade: ", quantidade[i]);
         }
     }
 }
@@ -204,8 +203,8 @@ limpa();
 
 function send()
 {
-    const BOT_TOKEN = "2118393099:AAHNp3T4KLNzNySB-EsXB9QCqupj9O5aoao";
-    const CHAT_IDs = ["1895287593"];
+    const BOT_TOKEN = "TOKEN";
+    const CHAT_IDs = ["CHAT_IDs"];
     var xmlHttp = new XMLHttpRequest();
 
     var cliente = "Matheus";
