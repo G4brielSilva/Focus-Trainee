@@ -28,4 +28,9 @@ function carrinho()
             console.log("Produto:",i," Quantidade: ", quantidade[i]);
         }
     }
+    /*
+    Pegar os produtos com quantidade diferente de 0 :3
+    Talvez seria interessante que os produtos tivessem seus respectivos ids salvo pra puxar ele e acessar no banco de dados(se não for muito trabalhoso claro)
+    Acho que id é mais correto que pelo nome, mesmo que este seja padronizado
+    */
 }
