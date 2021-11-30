@@ -142,7 +142,7 @@ const produtos =[
 ]
 
 var quantidade = [];
-limpa();
+for(i=0; i<produtos.length; i++)    quantidade[i] = 0;
     
 
 function add(id)
@@ -191,16 +191,6 @@ function mensagem(cliente, produtos)
     return msg;
 }
 
-function limpa()
-{
-    for(var i=0; i<produtos.length; i++)
-    {
-        quantidade[i] = 0;
-        //document.getElementById(i).innerHTML = quantidade[i];
-    }
-}
-limpa();
-
 function send()
 {
     const BOT_TOKEN = "TOKEN";
@@ -209,7 +199,6 @@ function send()
 
     var cliente = "Matheus";
     var msg =  mensagem(cliente, produtos);
-    limpa();
     
     if(msg != 0)
     {
@@ -220,6 +209,6 @@ function send()
             xmlHttp.send( null );
         }
     }
-
+    document.location.reload(true);
 }
 
