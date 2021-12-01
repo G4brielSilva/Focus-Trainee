@@ -161,13 +161,19 @@ function sub(id)
 
 function carrinho()
 {
+    var mensagem = "Seu carrinho:\n";
     for(i=0; i<produtos.length; i++)
     {
         if(quantidade[i] > 0)
         {
             console.log("Produto:",produtos[i].nome," Quantidade: ", quantidade[i]);
+            mensagem += produtos[i].nome+" Quantidade: "+ quantidade[i]+"\n";
         }
     }
+    if(mensagem != "Seu carrinho:\n")
+        alert(mensagem);
+    else
+        alert("Nenhum produto foi selecionado!");
 }
 
 
