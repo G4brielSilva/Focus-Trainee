@@ -142,8 +142,8 @@ const produtos =[
 ]
 
 var quantidade = [];
-for(i=0; i<produtos.length; i++)    quantidade[i] = 0;
-    
+for(i=0; i<produtos.length; i++)
+    quantidade[i] = 0;
 
 function add(id)
 {
@@ -161,7 +161,7 @@ function sub(id)
 
 function carrinho()
 {
-    var mensagem = "Seu carrinho:\n";
+    var mensagem = "";
     for(i=0; i<produtos.length; i++)
     {
         if(quantidade[i] > 0)
@@ -170,10 +170,18 @@ function carrinho()
             mensagem += produtos[i].nome+" Quantidade: "+ quantidade[i]+"\n";
         }
     }
-    if(mensagem != "Seu carrinho:\n")
-        alert(mensagem);
+    if(mensagem != "")
+    {
+        swal({
+            title: "Carrinho", 
+            text: mensagem,  
+            button: "Voltar",
+            button: "Reservar", 
+            allowOutsideClick: "true" 
+        });
+    }
     else
-        alert("Nenhum produto foi selecionado!");
+        swal("Nenhum produto foi selecionado!");
 }
 
 
