@@ -66,6 +66,7 @@ body {
 {
     height: 50px;
     position: absolute;
+    margin-left: -210px;
 }
 
 .corpo {
