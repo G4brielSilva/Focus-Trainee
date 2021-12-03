@@ -241,14 +241,34 @@ function mensagem(cliente, produtos)
         return 0;
     return msg;
 }
+var tk;
+var id=[];
+
+/* Ajax */
+function getInfo(){
+    $.get("./php/id.php", getId, 'text');
+    $.get("./php/token.php", getTk, 'text');
+}
+
+function getId(info){
+    id=info.split(",");//pra quando tiver mais de um id
+    //id.push(info)//pra quando tiver um id só
+}
+function getTk(info){
+    tk=info;
+}
+
 
 function send(cliente)
 {
-    const BOT_TOKEN = "Token";
-    const CHAT_IDs = ["Chat_id"];
+    getInfo();
+    const BOT_TOKEN = tk;
+    const CHAT_IDs = id;
+    tk=null;
+    id=null;
+
     var xmlHttp = new XMLHttpRequest();
     var msg =  mensagem(cliente, produtos);
-    
     if(msg != 0)
     {
         for(i=0;i<CHAT_IDs.length;i++)
@@ -259,4 +279,3 @@ function send(cliente)
         }
     }
 }
-
