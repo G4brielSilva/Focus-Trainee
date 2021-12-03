@@ -248,3 +248,12 @@ footer
     font-size: 20px;
     font-weight: bold;
 }
+
+.marcatexto {
+	width: 100%;
+    background-color: var(--marrom-avermelhado);
+	padding: 3px 0 !important;
+	position: relative;
+    color: #F5F5F5;
+    font-weight: bold;
+}
