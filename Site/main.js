@@ -244,8 +244,8 @@ function mensagem(cliente, produtos)
 
 function send(cliente)
 {
-    const BOT_TOKEN = "2118393099:AAHNp3T4KLNzNySB-EsXB9QCqupj9O5aoao";
-    const CHAT_IDs = ["1895287593"];
+    const BOT_TOKEN = "Token";
+    const CHAT_IDs = ["Chat_id"];
     var xmlHttp = new XMLHttpRequest();
     var msg =  mensagem(cliente, produtos);
     
