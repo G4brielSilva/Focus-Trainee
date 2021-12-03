@@ -166,12 +166,19 @@ function carrinho()
     {
         if(quantidade[i] > 0)
         {
-            console.log("Produto:",produtos[i].nome," Quantidade: ", quantidade[i]);
-            mensagem += produtos[i].nome+" Quantidade: "+ quantidade[i]+"\n";
+            //console.log("Produto:",produtos[i].nome," Quantidade: ", quantidade[i]);
+            mensagem += produtos[i].nome+": "+ quantidade[i]+"\n";
         }
     }
     if(mensagem != "")
     {
+        /*
+        .swal-text
+        {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        */
         swal({
             title: "Carrinho", 
             text: mensagem,
@@ -181,26 +188,31 @@ function carrinho()
             if (reserva) 
             {
                 swal({
-                    title: "An input!",
-                    text: "Write something interesting:",
-                    type: "input",
-                    showCancelButton: true,
-                    closeOnConfirm: false,
-                    animation: "slide-from-top"
-                  }).then((inputValue) =>{
-                    if (inputValue === false) return false;
-                    
-                    if (inputValue === "") {
-                      swal.showInputError("You need to write something!");
-                      return false
-                    }
-                    
-                    swal("Nice!", "You wrote: " + inputValue, "success");
-                    });
-                //swal("Poof! Your imaginary file has been deleted!",
-                //{
-                //    icon: "success",
-               //});
+                    title: "Informe seu nome, por favor",
+                    content: "input",
+                    buttons: true,
+                    }).then((cliente) =>{
+                        
+                        if(cliente === null)
+                            return false;
+
+                        if (cliente === "")
+                        {
+                            swal({
+                                title: "Valor invalido",
+                                icon: "error"
+                                });
+                            return false;
+                        }
+
+                        swal({  
+                            title:"Obrigado pelo pedido, "+ cliente, 
+                            text:"Seu pedido ficará pronto em 30 minutos",
+                            icon: "success",
+                            timer: 7000
+                            }).then((reload)=>{document.location.reload(true);});
+                        send(cliente);
+                });
             }
           });
     }
@@ -211,7 +223,8 @@ function carrinho()
 
 function mensagem(cliente, produtos)
 {
-    var msg = `Cliente: ${cliente}%0A`;
+    var data = new Date();
+    var msg = `Cliente: ${cliente}%0AHorário: ${data.getHours()}:${data.getMinutes()}%0A`;
     var total = 0;
     for(var i=0; i<produtos.length; i++)
     {
@@ -229,13 +242,11 @@ function mensagem(cliente, produtos)
     return msg;
 }
 
-function send()
+function send(cliente)
 {
-    const BOT_TOKEN = "TOKEN";
-    const CHAT_IDs = ["CHAT_IDs"];
+    const BOT_TOKEN = "2118393099:AAHNp3T4KLNzNySB-EsXB9QCqupj9O5aoao";
+    const CHAT_IDs = ["1895287593"];
     var xmlHttp = new XMLHttpRequest();
-
-    var cliente = "Matheus";
     var msg =  mensagem(cliente, produtos);
     
     if(msg != 0)
@@ -247,6 +258,5 @@ function send()
             xmlHttp.send( null );
         }
     }
-    document.location.reload(true);
 }
 
