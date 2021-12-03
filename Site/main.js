@@ -174,11 +174,35 @@ function carrinho()
     {
         swal({
             title: "Carrinho", 
-            text: mensagem,  
-            button: "Voltar",
-            button: "Reservar", 
+            text: mensagem,
+            buttons: ["Voltar", "Reservar"],
             allowOutsideClick: "true" 
-        });
+        }).then((reserva) => {
+            if (reserva) 
+            {
+                swal({
+                    title: "An input!",
+                    text: "Write something interesting:",
+                    type: "input",
+                    showCancelButton: true,
+                    closeOnConfirm: false,
+                    animation: "slide-from-top"
+                  }).then((inputValue) =>{
+                    if (inputValue === false) return false;
+                    
+                    if (inputValue === "") {
+                      swal.showInputError("You need to write something!");
+                      return false
+                    }
+                    
+                    swal("Nice!", "You wrote: " + inputValue, "success");
+                    });
+                //swal("Poof! Your imaginary file has been deleted!",
+                //{
+                //    icon: "success",
+               //});
+            }
+          });
     }
     else
         swal("Nenhum produto foi selecionado!");
