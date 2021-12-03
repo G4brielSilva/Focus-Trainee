@@ -124,10 +124,7 @@ body {
     width: 80%;
     margin-left: 1.8%;
 }
-.h3produtos{
-    text-align: left;
-    margin-left:5%;
-}
+
 .tracinho{
     background-color: var(--marrom-avermelhado);
     height: 2px;
@@ -246,5 +243,14 @@ footer
     top: -20px;
     padding-left: 10px;
     font-size: 20px;
+    font-weight: bold;
+}
+
+.marcatexto {
+	width: 100%;
+    background-color: var(--marrom-avermelhado);
+	padding: 3px 0 !important;
+	position: relative;
+    color: #F5F5F5;
     font-weight: bold;
 }
