@@ -172,6 +172,7 @@ function carrinho()
     }
     if(mensagem != "")
     {
+        getInfo();
         /*
         .swal-text
         {
@@ -204,7 +205,6 @@ function carrinho()
                                 });
                             return false;
                         }
-
                         swal({  
                             title:"Obrigado pelo pedido, "+ cliente, 
                             text:"Seu pedido ficará pronto em 30 minutos",
@@ -256,17 +256,17 @@ function getId(info){
 }
 function getTk(info){
     tk=info;
+    console.log(tk);
 }
 
 
 function send(cliente)
 {
-    getInfo();
+    
     const BOT_TOKEN = tk;
     const CHAT_IDs = id;
     tk=null;
     id=null;
-
     var xmlHttp = new XMLHttpRequest();
     var msg =  mensagem(cliente, produtos);
     if(msg != 0)
@@ -274,6 +274,7 @@ function send(cliente)
         for(i=0;i<CHAT_IDs.length;i++)
         {
             const Url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_IDs[i]}&text=${msg}`;
+            console.log(Url)
             xmlHttp.open( "GET", Url, false );
             xmlHttp.send( null );
         }
