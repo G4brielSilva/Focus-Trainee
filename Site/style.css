@@ -261,3 +261,9 @@ footer
     color: #F5F5F5;
     font-weight: bold;
 }
+
+.swal-text
+{
+    font-size: 20px;
+    font-weight: bold;
+}

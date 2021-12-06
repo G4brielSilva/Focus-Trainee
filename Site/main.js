@@ -173,13 +173,6 @@ function carrinho()
     if(mensagem != "")
     {
         getInfo();
-        /*
-        .swal-text
-        {
-            font-size: 20px;
-            font-weight: bold;
-        }
-        */
         swal({
             title: "Carrinho", 
             text: mensagem,
@@ -205,13 +198,32 @@ function carrinho()
                                 });
                             return false;
                         }
-                        swal({  
-                            title:"Obrigado pelo pedido, "+ cliente, 
-                            text:"Seu pedido ficará pronto em 30 minutos",
-                            icon: "success",
-                            timer: 7000
-                            }).then((reload)=>{document.location.reload(true);});
-                        send(cliente);
+                        swal({
+                            title: "Informe seu Telefone, por favor",
+                            content: "input",
+                            buttons: true,
+                            }).then((telefone) =>{
+                                
+                                if(telefone === null)
+                                    return false;
+        
+                                if (telefone === "")
+                                {
+                                    swal({
+                                        title: "Valor invalido",
+                                        icon: "error"
+                                        });
+                                    return false;
+                                }
+                        
+                                swal({  
+                                    title:"Obrigado pelo pedido, "+ cliente, 
+                                    text:"Seu pedido ficará pronto em 30 minutos",
+                                    icon: "success",
+                                    timer: 7000
+                                    }).then((reload)=>{document.location.reload(true);});
+                                send(cliente, telefone);
+                            });
                 });
             }
           });
