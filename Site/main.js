@@ -233,10 +233,10 @@ function carrinho()
 }
 
 
-function mensagem(cliente, produtos)
+function mensagem(cliente, telefone, produtos)
 {
     var data = new Date();
-    var msg = `Cliente: ${cliente}%0AHorário: ${data.getHours()}:${data.getMinutes()}%0A`;
+    var msg = `Cliente: ${cliente}%0AHorário: ${data.getHours()}:${data.getMinutes()}%0ATelefone: ${telefone}%0A`;
     var total = 0;
     for(var i=0; i<produtos.length; i++)
     {
@@ -272,7 +272,7 @@ function getTk(info){
 }
 
 
-function send(cliente)
+function send(cliente, telefone)
 {
     
     const BOT_TOKEN = tk;
@@ -280,7 +280,7 @@ function send(cliente)
     tk=null;
     id=null;
     var xmlHttp = new XMLHttpRequest();
-    var msg =  mensagem(cliente, produtos);
+    var msg =  mensagem(cliente, telefone, produtos);
     if(msg != 0)
     {
         for(i=0;i<CHAT_IDs.length;i++)
