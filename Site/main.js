@@ -234,22 +234,31 @@ function carrinho()
         swal("Nenhum produto foi selecionado!");
 }
 
+function formata(valor)
+{
+    if(valor<10)
+        return "0"+String(valor);
+    else
+        return valor;
+}
 
 function mensagem(cliente, telefone, produtos)
 {
     var data = new Date();
-    var msg = `Cliente: ${cliente}%0AHorário: ${data.getHours()}:${data.getMinutes()}%0ATelefone: ${telefone}%0A`;
+    var hora = formata(data.getHours()-15);
+    var minutos = formata(data.getMinutes());
+    var msg = `Cliente: ${cliente}%0AHorário: ${hora}:${minutos}%0ATelefone: ${telefone}%0A%0A`;
     var total = 0;
     for(var i=0; i<produtos.length; i++)
     {
         if(quantidade[i]> 0)
         {
-            msg += `${produtos[i].nome}: ${quantidade[i]} x ${produtos[i].valor} 
-                    = R$ ${quantidade[i]*produtos[i].valor}%0A`;
+            msg += `${produtos[i].nome}: ${quantidade[i]} x ${produtos[i].valor.toFixed(2)} 
+                    = R$ ${quantidade[i]*produtos[i].valor.toFixed(2)}%0A`;
             total += quantidade[i]*produtos[i].valor;
         }
     }
-    msg += `Total = R$ ${total}\n`;
+    msg += `Total = R$ ${total.toFixed(2)}\n`;
 
     if(total <= 0)
         return 0;
@@ -277,8 +286,8 @@ function getTk(info){
 function send(cliente, telefone)
 {
     
-    const BOT_TOKEN = tk;
-    const CHAT_IDs = id;
+    const BOT_TOKEN = "2118393099:AAHNp3T4KLNzNySB-EsXB9QCqupj9O5aoao";
+    const CHAT_IDs = ["1895287593"];
     tk=null;
     id=null;
     var xmlHttp = new XMLHttpRequest();
