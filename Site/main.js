@@ -162,14 +162,16 @@ function sub(id)
 function carrinho()
 {
     var mensagem = "";
+    var total = 0.0;
     for(i=0; i<produtos.length; i++)
     {
         if(quantidade[i] > 0)
         {
-            //console.log("Produto:",produtos[i].nome," Quantidade: ", quantidade[i]);
-            mensagem += produtos[i].nome+": "+ quantidade[i]+"\n";
+            mensagem += produtos[i].nome+": "+ quantidade[i]+"x R$ "+produtos[i].valor.toFixed(2)+"\n";
+            total += quantidade[i]*produtos[i].valor;
         }
     }
+    mensagem += "\nTotal: R$ "+ total.toFixed(2);
     if(mensagem != "")
     {
         getInfo();
