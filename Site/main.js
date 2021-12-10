@@ -245,7 +245,7 @@ function formata(valor)
 function mensagem(cliente, telefone, produtos)
 {
     var data = new Date();
-    var hora = formata(data.getHours()-15);
+    var hora = formata(data.getHours());
     var minutos = formata(data.getMinutes());
     var msg = `Cliente: ${cliente}%0AHorário: ${hora}:${minutos}%0ATelefone: ${telefone}%0A%0A`;
     var total = 0;
