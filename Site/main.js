@@ -169,9 +169,10 @@ function carrinho()
         {
             mensagem += produtos[i].nome+": "+ quantidade[i]+"x R$ "+produtos[i].valor.toFixed(2)+"\n";
             total += quantidade[i]*produtos[i].valor;
+            mensagem += "\nTotal: R$ "+ total.toFixed(2);
         }
     }
-    mensagem += "\nTotal: R$ "+ total.toFixed(2);
+    
     if(mensagem != "")
     {
         getInfo();
